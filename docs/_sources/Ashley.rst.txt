@@ -1,0 +1,7 @@
+Ashley module
+=============
+
+.. automodule:: Ashley
+   :members:
+   :undoc-members:
+   :show-inheritance:

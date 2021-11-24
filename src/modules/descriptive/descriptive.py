@@ -47,7 +47,7 @@ def corr(logger):
     print('We are in module: corr')
 
     datapath = module_config['inputs']['dataset']
-    data = pd.read_csv(datapath)
+    data = pd.read_csv(datapath, index_col = False)
     corr = data.corr()
     ax = sns.heatmap(corr, 
     xticklabels=corr.columns, yticklabels=corr.columns, 
@@ -86,6 +86,6 @@ def main(logger, resultsDict):
     print('Getting out of descriptive module')
     print('Getting out of corr module')
     print('-'*30)
-5
+
     return
 
